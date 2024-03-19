@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Sign Up</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <div class="container">
+      <h1>Sign Up</h1>
+      <h5>Sign up using your Google account:</h5>
+      <a href="http://localhost:8000/auth/google/" class="google-btn">
+        <img src="google.png" alt="Google Logo" class="google-logo" />
+        Sign up with Google
+      </a>
+    </div>
+  </body>
+</html>
+
+    <style>
+     body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  background-image: url('background.jpg'); /* Replace 'background.jpg' with your image path */
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed; /* Keeps the background image fixed while scrolling */
+}
+
+.container {
+  max-width: 400px;
+  margin: 100px auto;
+  background-color: rgba(255, 255, 255, 0.7); /* Add background color with transparency */
+  padding: 30px;
+  border-radius: 8px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  text-align: center;
+}
+
+h1 {
+  font-size: 24px;
+  margin-bottom: 20px;
+}
+
+.google-btn {
+  display: inline-block;
+  background-color: #4285f4;
+  color: #fff;
+  text-decoration: none;
+  padding: 10px 20px;
+  border-radius: 4px;
+  transition: background-color 0.3s;
+}
+
+.google-btn:hover {
+  background-color: #3e78e6;
+}
+
+.google-logo {
+  width: 20px;
+  vertical-align: middle;
+  margin-right: 10px;
+}
+
+/* Add the following CSS for logo animation */
+.google-logo-move {
+  transition: transform 0.5s ease; /* Apply transition */
+}
+
+.google-logo-move:hover {
+  transform: translateX(-10px); /* Move to the left by 10 pixels */
+}
+
+    </style>
+    <script>// Optional JavaScript to add smooth transition effect
+const googleLogo = document.querySelector('.google-logo');
+
+googleLogo.addEventListener('click', () => {
+  googleLogo.classList.toggle('google-logo-move');
+});
+</script>
+  </body>
+</html>
