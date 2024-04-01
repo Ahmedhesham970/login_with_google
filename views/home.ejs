@@ -23,16 +23,16 @@
   font-family: Arial, sans-serif;
   margin: 0;
   padding: 0;
-  background-image: url('background.jpg'); /* Replace 'background.jpg' with your image path */
+  background-image: url('background.jpg'); 
   background-size: cover;
   background-position: center;
-  background-attachment: fixed; /* Keeps the background image fixed while scrolling */
+  background-attachment: fixed; 
 }
 
 .container {
   max-width: 400px;
   margin: 100px auto;
-  background-color: rgba(255, 255, 255, 0.7); /* Add background color with transparency */
+  background-color: rgba(255, 255, 255, 0.7); 
   padding: 30px;
   border-radius: 8px;
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
@@ -64,22 +64,16 @@ h1 {
   margin-right: 10px;
 }
 
-/* Add the following CSS for logo animation */
+
 .google-logo-move {
-  transition: transform 0.5s ease; /* Apply transition */
+  transition: transform 0.9s ease-in-out; 
 }
 
 .google-logo-move:hover {
-  transform: translateX(-10px); /* Move to the left by 10 pixels */
+  transform: translateX(-10px); 
 }
 
     </style>
-    <script>// Optional JavaScript to add smooth transition effect
-const googleLogo = document.querySelector('.google-logo');
 
-googleLogo.addEventListener('click', () => {
-  googleLogo.classList.toggle('google-logo-move');
-});
-</script>
   </body>
 </html>

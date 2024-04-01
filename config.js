@@ -22,7 +22,7 @@ app.use(cookieParser());
 // Session middleware
 app.use(
   session({
-    secret: process.env.COOKIE_SESSION_KEY || "your_secret_key", // Replace with your actual secret key or fetch from environment variable
+    secret: process.env.COOKIE_SESSION_KEY || "your_secret_key",
     resave: false,
     saveUninitialized: true,
   })

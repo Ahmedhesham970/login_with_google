@@ -1,6 +1,6 @@
 const passport = require("passport");
 let GoogleStrategy = require("passport-google-oauth20").Strategy;
-const mongoose = require("mongoose"); // Assuming you're using Mongoose for database
+const mongoose = require("mongoose"); 
 const User = require("./models/userModel");
 require("dotenv").config();
 
@@ -18,7 +18,7 @@ passport.use(
       // console.log("Name:", profile.displayName);
       const email = profile.emails[0].value;
       const name = profile.displayName;
-      // Pass the user profile to the done callback
+      // Passing the user profile to the done callback
       const user = await User.findOne({ google_id: profile.id });
       if (user) {
         return console.log("\n \n user already exists! \n \n ");
