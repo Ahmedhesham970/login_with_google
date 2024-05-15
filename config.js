@@ -17,20 +17,8 @@ app.set("view engine", "ejs");
 // Middleware
 app.use(express.static(path.join(__dirname, "views")));
 app.use(bodyParser.json());
-app.use(cookieParser());
 
-// Session middleware
-app.use(
-  session({
-    secret: process.env.COOKIE_SESSION_KEY || "your_secret_key",
-    resave: false,
-    saveUninitialized: true,
-  })
-);
 
-// Passport middleware
-app.use(passport.initialize());
-app.use(passport.session());
 
 // Routes
 app.use(auth);
